@@ -1,29 +1,63 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
-
-* {
-  padding: 0;
-  margin: 0;
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
 }
 body {
   font-family: "Outfit", sans-serif;
-  font-size: 15px;
-  background-color: hsl(217, 100%, 84%);
+  font-size: 1rem;
+  background-color: hsl(212, 45%, 89%);
 }
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 .attribution {
   text-align: center;
 }
-.main {
+.card {
   background-color: #fff;
-  width: 15rem;
-  height: 23rem;
+  max-width: 15rem;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -31,17 +65,17 @@ body {
   border-radius: 1rem;
 }
 img {
-  width: 13rem;
   border-radius: 1rem;
 }
 
 p {
   text-align: center;
   margin: 0.5rem 0;
-  font-size: 13px;
+  font-size: 1rem;
+  font-weight: 400;
 }
-.highlighted {
-  font-size: 16px;
+.title {
+  font-size: 1rem;
   margin-top: 1.3rem;
-  font-weight: bold;
+  font-weight: 700;
 }
