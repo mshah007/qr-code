@@ -57,7 +57,7 @@ body {
 }
 .card {
   background-color: #fff;
-  max-width: 90rem;
+  max-width: 15rem;
   display: flex;
   flex-direction: column;
   align-content: center;
